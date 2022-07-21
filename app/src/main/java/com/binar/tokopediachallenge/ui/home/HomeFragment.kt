@@ -12,8 +12,8 @@ import com.binar.tokopediachallenge.R
 import com.binar.tokopediachallenge.databinding.FragmentHomeBinding
 import com.sopian.gojek.hide
 import com.sopian.gojek.show
-import com.sopian.gojek.util.enableStatusBar
-import com.sopian.gojek.util.getColor
+import com.binar.tokopediachallenge.util.enableStatusBar
+import com.binar.tokopediachallenge.util.getColor
 
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
@@ -30,7 +30,7 @@ class HomeFragment : Fragment() {
         binding.homeScrollview.setOnScrollChangeListener(
             NestedScrollView.OnScrollChangeListener { _, _, scrollY, _, oldScrollY ->
 
-                if (scrollY > 150) {
+                if (scrollY > 130) {
 
                     changeStatusBarColorOnScrolled(R.color.white, true)
 
@@ -65,7 +65,6 @@ class HomeFragment : Fragment() {
                 }
             }
         )
-
         return binding.root
     }
 

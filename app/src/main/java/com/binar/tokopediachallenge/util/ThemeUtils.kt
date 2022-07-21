@@ -1,4 +1,4 @@
-package com.sopian.gojek.util
+package com.binar.tokopediachallenge.util
 
 import android.content.Context
 import android.os.Build
